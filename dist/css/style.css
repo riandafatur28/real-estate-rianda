@@ -1,0 +1,175 @@
+* {
+  font-family: 'Poppins', sans-serif;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: #ffffff;
+}
+
+.navbar-brand {
+  color: #ffffff;
+}
+
+.navbar-toggler {
+  border: 0;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.navbar-toggler .toggler-icon {
+  width: 30px;
+  height: 3px;
+  background-color: #102c57;
+  display: block;
+  transition: all 0.2s;
+}
+
+.navbar {
+  transition: all 0.3s ease;
+}
+
+.navbar.scrolling-active {
+  background-color: #102c57;
+  padding: 15px 0;
+}
+
+/* CSS styles for navbar, hamburger menu, and other elements */
+.navbar-toggler {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.custom-toggler {
+  padding: 0.25rem 0.75rem; /* Sesuaikan padding sesuai kebutuhan */
+  border: none; /* Hilangkan border jika perlu */
+}
+
+.custom-toggler .toggler-icon {
+  display: block;
+  width: 24px; /* Sesuaikan lebar */
+  height: 3px; /* Sesuaikan tinggi */
+  background-color: #fff; /* Sesuaikan warna */
+  margin: 4px 0; /* Jarak antar ikon */
+}
+
+@media (max-width: 576px) {
+  .custom-toggler {
+    padding: 0.25rem 0.75rem;
+  }
+
+  .custom-toggler .toggler-icon {
+    width: 24px; /* Pastikan lebar tetap sama */
+    height: 3px; /* Pastikan tinggi tetap sama */
+  }
+}
+
+.toggler-icon {
+  display: block;
+  width: 30px;
+  height: 2px;
+  background-color: #fff; /* Warna latar belakang hamburger menu */
+  margin-top: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.toggler-icon.middle-bar {
+  margin: 4px auto;
+}
+
+.navbar-toggler:not(.collapsed) .toggler-icon {
+  background-color: #fff; /* Warna latar belakang hamburger menu saat hamburger menu tidak diklik */
+}
+
+.navbar-toggler:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.navbar i {
+  color: white;
+}
+
+.navbar i:hover {
+  color: #102c57;
+  cursor: pointer;
+}
+
+.hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../../assets/img/projects/hero.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+}
+
+.about .row .col:nth-child(1) {
+  background-color: #222;
+}
+
+.projects {
+  padding: 100px 0 100px 0;
+}
+
+.projects img {
+  height: 250px;
+  mx: 2px;
+}
+
+.projects .col img {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.services img {
+  width: 250px;
+  height: 400px;
+}
+
+.services h5 {
+  line-height: 1.8;
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
+
+.services i {
+  color: green;
+  font-size: 30px;
+}
+
+.faq {
+  padding-top: 100px;
+}
+
+@media (max-width: 768px) {
+  .projects .col {
+    margin-bottom: 1rem;
+  }
+  .services img {
+    width: 220px;
+  }
+}
+
+@media sreen and (max-width: 1200px) {
+  .services img {
+    width: 220px;
+  }
+}
+
+@media sreen and(max-width: 475px) {
+  .services h5 {
+    font-size: 16px;
+  }
+}
